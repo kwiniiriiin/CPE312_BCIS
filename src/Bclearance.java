@@ -31,7 +31,8 @@ public class Bclearance extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -241,26 +242,25 @@ public class Bclearance extends javax.swing.JFrame {
 
     }// GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_jButton2MouseClicked
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {
 
-        Toolkit tkp = jPanel1.getToolkit();
+        Toolkit tkp = area.getToolkit();
         PrintJob pjp = tkp.getPrintJob(this, null, null);
         Graphics g = pjp.getGraphics();
-        jPanel1.print(g);
+        area.print(g);
         g.dispose();
         pjp.end();
 
-    }// GEN-LAST:event_jButton2MouseClicked
+    }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        Toolkit tkp = jPanel1.getToolkit();
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+        Toolkit tkp = area.getToolkit();
         PrintJob pjp = tkp.getPrintJob(this, null, null);
         Graphics g = pjp.getGraphics();
-        jPanel1.print(g);
+        area.print(g);
         g.dispose();
         pjp.end();
-    }// GEN-LAST:event_jButton2ActionPerformed
+    }
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_jButton4MouseClicked
 
