@@ -31,7 +31,7 @@ public class Bclearance extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -109,7 +109,7 @@ public class Bclearance extends javax.swing.JFrame {
         area.setRows(5);
         jScrollPane1.setViewportView(area);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 90, 670, 550));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 90, 720, 550));
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 30)); // NOI18N
         jLabel8.setText("ADMINISTATORS:");
