@@ -11,7 +11,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+import java.awt.Graphics;
+import java.awt.PrintJob;
+import java.awt.Toolkit;
 import javax.swing.JPanel;
 
 public class Bclearance extends javax.swing.JFrame {
@@ -241,63 +243,23 @@ public class Bclearance extends javax.swing.JFrame {
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_jButton2MouseClicked
 
-        try {
-
-            Document doc = new Document();
-            try {
-                PdfWriter.getInstance(doc, new FileOutputStream("BARANGAY CLEARANCE.pdf"));
-            } catch (FileNotFoundException ex) {
-                Logger.getLogger(Printing.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            doc.open();
-
-            doc.add(new Paragraph(area.getText().toString()));
-            doc.close();
-
-            // print the document
-
-        } catch (DocumentException ex) {
-            Logger.getLogger(Printing.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Toolkit tkp = jPanel1.getToolkit();
+        PrintJob pjp = tkp.getPrintJob(this, null, null);
+        Graphics g = pjp.getGraphics();
+        jPanel1.print(g);
+        g.dispose();
+        pjp.end();
 
     }// GEN-LAST:event_jButton2MouseClicked
 
-    private static void printPanel(JPanel panel) {
-        // Create a PrinterJob
-        PrinterJob printerJob = PrinterJob.getPrinterJob();
-
-        // Set the printable object to the panel
-        printerJob.setPrintable((graphics, pageFormat, pageIndex) -> {
-            if (pageIndex > 0) {
-                return Printable.NO_SUCH_PAGE;
-            }
-
-            // Create a graphics2D object
-            Graphics2D g2d = (Graphics2D) graphics;
-
-            // Set the translation to the origin
-            g2d.translate(pageFormat.getImageableX(), pageFormat.getImageableY());
-
-            // Print the panel
-            panel.printAll(g2d);
-
-            return Printable.PAGE_EXISTS;
-        });
-
-        // Show the print dialog
-        if (printerJob.printDialog()) {
-            try {
-                // Print the panel
-                printerJob.print();
-            } catch (PrinterException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        printPanel(jPanel1);
+        Toolkit tkp = jPanel1.getToolkit();
+        PrintJob pjp = tkp.getPrintJob(this, null, null);
+        Graphics g = pjp.getGraphics();
+        jPanel1.print(g);
+        g.dispose();
+        pjp.end();
     }// GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_jButton4MouseClicked
