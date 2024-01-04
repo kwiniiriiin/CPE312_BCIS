@@ -99,10 +99,9 @@ public class Bclearance extends javax.swing.JFrame {
         purpose.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jPanel1.add(purpose, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 240, 40));
 
-        area.setColumns(20);
-        area.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        area.setRows(5);
-        jScrollPane1.setViewportView(area);
+        area.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        area.setLineWrap(true);
+        area.setWrapStyleWord(true);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 90, 720, 550));
 
