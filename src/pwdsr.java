@@ -13,8 +13,6 @@ import java.awt.Toolkit;
 
 public class pwdsr extends javax.swing.JFrame {
 
-    private Document doc;
-
     public pwdsr() {
         initComponents();
     }
@@ -355,9 +353,4 @@ public class pwdsr extends javax.swing.JFrame {
     private javax.swing.JTextField sitio;
     // End of variables declaration//GEN-END:variables
 
-    private static class Printing {
-
-        public Printing(Document doc) {
-        }
-    }
 }

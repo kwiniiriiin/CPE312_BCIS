@@ -13,8 +13,6 @@ import java.awt.Toolkit;
 
 public class ftjs extends javax.swing.JFrame {
 
-    private Document doc;
-
     public ftjs() {
         initComponents();
     }
@@ -335,9 +333,4 @@ public class ftjs extends javax.swing.JFrame {
     private javax.swing.JTextField sitio;
     // End of variables declaration//GEN-END:variables
 
-    private static class Printing {
-
-        public Printing(Document doc) {
-        }
-    }
 }

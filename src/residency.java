@@ -13,8 +13,6 @@ import java.awt.Toolkit;
 
 public class residency extends javax.swing.JFrame {
 
-    private Document doc;
-
     public residency() {
         initComponents();
     }
@@ -341,9 +339,4 @@ public class residency extends javax.swing.JFrame {
     private javax.swing.JTextField year;
     // End of variables declaration//GEN-END:variables
 
-    private static class PDFPrintable {
-
-        public PDFPrintable(Document doc) {
-        }
-    }
 }
