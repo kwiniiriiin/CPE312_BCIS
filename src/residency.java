@@ -99,9 +99,8 @@ public class residency extends javax.swing.JFrame {
         year.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jPanel1.add(year, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, 210, 40));
 
-        area.setColumns(20);
-        area.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        area.setRows(5);
+        area.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+
         jScrollPane1.setViewportView(area);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 90, 710, 550));
@@ -195,30 +194,30 @@ public class residency extends javax.swing.JFrame {
 
         // for the elements
 
-        area.setText(area.getText() + "\n\nTo Whom it May Concern: \n\n\n");
+        area.setText(area.getText() + "\n\nTo Whom it May Concern: \n\n");
         area.setText(area.getText() + "This is to certify that   " + name.getText() + ",  " + age.getText()
-                + " years of age, a resident of Sitio " + sitio.getText() + ", of Lapasan Cagayan De Oro City, since  "
+                + " years of age, a resident of Sitio " + sitio.getText() + ", of Lapasan\nCagayan De Oro City, since  "
                 + year.getText()
                 + "  up to the present as stated on his/her Sitio clearance submitted to this office. ");
         area.setText(area.getText() + "\n");
         area.setText(area.getText()
-                + "\nThis certification is issued upon the request of the above name mentioned as a requirement for "
+                + "\nThis certification is issued upon the request of the above name mentioned as a\nrequirement for "
                 + purpose.getText() + " ");
         area.setText(area.getText() + " and for whatever legal intent it may serve him/her best.");
         area.setText(area.getText() + "\n\nIssued on this " + date.getText()
                 + "  at the LGU Barangay, Lapasan, Cagayan De Oro City.");
         area.setText(area.getText()
-                + "\n\n\n\n\n\t\t\t                                                                               "
+                + "\n\n\t\t                                                                               "
                 + Pbarang.getText()
-                + "\n\t\t\t                                                                               Punong Barangay\n\n");
-        area.setText(area.getText() + "\n\n\n ");
+                + "\n\t\t                                                              Punong Barangay\n\n");
+        area.setText(area.getText() + "\n\n ");
         area.setText(area.getText() + "By the Authority of Punong Barangay\n\n");
         area.setText(area.getText() + "\n                                                                             "
                 + Badmin.getText());
         area.setText(area.getText()
-                + "\n                                                                             Barangay Administrator\n\n");
+                + "\n                                                                   Barangay Administrator\n");
         area.setText(area.getText()
-                + "\n\n\n                                                         GOD BLESS LAPASAN !!!");
+                + "\n\n                                                         GOD BLESS LAPASAN !!!");
 
     }// GEN-LAST:event_jButton3ActionPerformed
 
@@ -243,20 +242,20 @@ public class residency extends javax.swing.JFrame {
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_jButton2MouseClicked
 
-        Toolkit tkp = jPanel1.getToolkit();
+        Toolkit tkp = area.getToolkit();
         PrintJob pjp = tkp.getPrintJob(this, null, null);
         Graphics g = pjp.getGraphics();
-        jPanel1.print(g);
+        area.print(g);
         g.dispose();
         pjp.end();
 
     }// GEN-LAST:event_jButton2MouseClicked
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton2ActionPerformed
-        Toolkit tkp = jPanel1.getToolkit();
+        Toolkit tkp = area.getToolkit();
         PrintJob pjp = tkp.getPrintJob(this, null, null);
         Graphics g = pjp.getGraphics();
-        jPanel1.print(g);
+        area.print(g);
         g.dispose();
         pjp.end();
     }// GEN-LAST:event_jButton2ActionPerformed

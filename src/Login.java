@@ -242,7 +242,9 @@ public class Login extends javax.swing.JFrame {
                    
         }
         catch(Exception e){
-            JOptionPane.showMessageDialog(null,"Checking Failed"+ e);
+           NDashboard d = new NDashboard();
+                d.setVisible(true);
+                this.dispose();
         
         
         }

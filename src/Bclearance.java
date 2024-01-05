@@ -100,8 +100,8 @@ public class Bclearance extends javax.swing.JFrame {
         jPanel1.add(purpose, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 240, 40));
 
         area.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        area.setLineWrap(true);
-        area.setWrapStyleWord(true);
+
+        jScrollPane1.setViewportView(area);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 90, 720, 550));
 
@@ -191,29 +191,29 @@ public class Bclearance extends javax.swing.JFrame {
 
         // for the elements
 
-        area.setText(area.getText() + "\n\nTo Whom it May Concern: \n\n\n");
+        area.setText(area.getText() + "\nTo Whom it May Concern: \n");
         area.setText(area.getText() + "This is to certify that  " + name.getText() + ",  " + age.getText()
-                + " years of age, a resident of Sitio " + sitio.getText() + ", of Lapasan Cagayan De Oro City, "
-                + " and has a GOOD MORAL character and has no derogatory record as stated on his/her Sitio clearance submitted to this office.");
+                + " years of age, a resident of Sitio\n" + sitio.getText() + ", of Lapasan Cagayan De Oro City, "
+                + " and has a\nGOOD MORAL character and has no derogatory record as stated on\nhis/her Sitio clearancesubmitted to this office.");
         area.setText(area.getText() + "\n");
         area.setText(area.getText()
-                + "\nThis certification is Issued upon the request of the above named person as mentioned as a requirement for "
+                + "\nThis certification is Issued upon the request of the above named\nperson as mentioned as arequirement for "
                 + purpose.getText() + " ");
-        area.setText(area.getText() + " and for whatever legal intent it may serve him/her best.");
+        area.setText(area.getText() + " and for whatever legal intent\nit may serve him/her best.");
         area.setText(area.getText() + "\n\nIssued on this " + date.getText()
                 + "  at the LGU Barangay , Lapasan , Cagayan De Oro City.");
         area.setText(area.getText()
-                + "\n\n\n\n\n\t\t\t                                                                               "
+                + "\n\t\t                                                                               "
                 + Pbarang.getText()
-                + "\n\t\t\t                                                                             Punong Barangay\n\n");
-        area.setText(area.getText() + "\n\n\n ");
+                + "\n\t\t                                                      Punong Barangay\n\n");
+        area.setText(area.getText() + "\n");
         area.setText(area.getText() + "By the Authority of Punong Barangay\n\n");
         area.setText(area.getText() + "\n                                                                             "
                 + Badmin.getText());
         area.setText(area.getText()
-                + "\n                                                                             Barangay Administrator\n\n");
+                + "\n                                                            Barangay Administrator\n\n");
         area.setText(area.getText()
-                + "\n\n\n                                                         GOD BLESS LAPASAN !!!");
+                + "\n                                                       GOD BLESS LAPASAN !!!");
 
     }// GEN-LAST:event_jButton3ActionPerformed
 
@@ -301,7 +301,7 @@ public class Bclearance extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Bclearance().setVisible(true);
+                new Indigency1().setVisible(true);
             }
         });
     }
